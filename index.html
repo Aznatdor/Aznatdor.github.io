@@ -40,6 +40,31 @@
         ul { padding-left: 20px; margin-top: 6px; }
         li { margin-bottom: 8px; }
         .tag { font-size: 0.88rem; color: #555; }
+
+        /* Стиль для раскрывающегося абстракта */
+        details.abstract {
+            margin-top: 4px;
+            font-size: 0.9rem;
+        }
+        details.abstract summary {
+            color: #0044cc;
+            cursor: pointer;
+            user-select: none;
+            display: inline;
+        }
+        details.abstract summary:hover {
+            text-decoration: underline;
+        }
+        details.abstract .abstract-content {
+            margin-top: 8px;
+            padding: 10px 14px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #0044cc;
+            font-size: 0.88rem;
+            color: #333;
+            line-height: 1.55;
+            border-radius: 0 4px 4px 0;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +125,26 @@
         <li>
             <b>Barycenters in Wasserstein Space: Local Geometry and Parametric Convergence</b><br>
             <i>KAU Mathematics Research Seminar</i>, Kyiv, 2026.
+            <details class="abstract" ontoggle="if (this.open && window.MathJax) MathJax.typesetPromise([this])">
+                <summary><b>[Abstract]</b></summary>
+                <div class="abstract-content">
+                    Fr&eacute;chet barycenters in the Wasserstein space $\mathcal{W}_2(\mathbb{R}^d)$ provide a principled framework
+                    for interpolating and averaging probability distributions, with applications ranging from image processing to non-Euclidean statistics.
+                    In classical Hilbert spaces, the empirical Fr&eacute;chet mean converges to the population mean at a dimension-free parametric rate
+                    $\mathbb{E}\|b_n - b^*\|^2 = \frac{1}{n}\operatorname{Var}(X)$.
+                    However, transferring such statistical guarantees to $\mathcal{W}_2(\mathbb{R}^d)$ is challenging due to the non-linear,
+                    metric-geodesic nature of Wasserstein spaces.
+                    <br><br>
+                    In this talk, we investigate how the local metric geometry of $\mathcal{W}_2(\mathbb{R}^d)$ governs the convergence of empirical barycenters.
+                    We construct the space of directions and metric tangent cones via comparison angles and geodesics,
+                    highlighting that for absolutely continuous base measures $\mu \in \mathcal{P}_{ac}(\mathbb{R}^d)$,
+                    the tangent cone $T_\mu \mathcal{W}_2(\mathbb{R}^d)$ embeds as a closed convex cone in $L^2(\mu)$.
+                    Exploiting this local structure and displacement convexity, we present conditions ensuring the existence and uniqueness of
+                    barycenters for random measures on $\mathcal{W}_2(\mathbb{R}^d)$, and establish an explicit finite-sample parametric convergence bound:
+                    $$\mathbb{E}\big[W_2^2(b_n, b^*)\big] \le \frac{4\sigma^2}{C n},$$
+                    where $\sigma^2$ is the barycentric variance and $C \in (0, 1]$ is a geometric parameter reflecting local curvature and strict convexity.
+                </div>
+            </details>
         </li>
     </ul>
 
