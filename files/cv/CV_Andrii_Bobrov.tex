@@ -1,0 +1,146 @@
+%! TeX program=lualatex
+\documentclass[10pt, a4paper]{article}
+
+\usepackage{lmodern}
+\usepackage[top=0.42in, bottom=0.42in, left=0.5in, right=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+% PDF and URL styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue!70!black
+}
+
+% Section title styling (tightened for single-page precision)
+\titleformat{\section}
+  {\normalsize\bfseries\uppercase}
+  {}{0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{3.5pt}{1.5pt}
+
+% Itemize spacing
+\setlist[itemize]{noitemsep, topsep=0.5pt, parsep=0pt, partopsep=0pt, leftmargin=1.1em}
+
+% Custom command for entries
+\newcommand{\entry}[4]{
+  \noindent \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4} \vspace{0.5pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% ==================== HEADER ====================
+\begin{center}
+    {\LARGE \textbf{ANDRII BOBROV}} \\[2pt]
+    Department of Mathematics, Kyiv Academic University (KAU) \\
+    Visiting Member, The Fields Institute for Research in Mathematical Sciences \\
+    \smallskip
+    {\small
+    Email: \href{mailto:andrii.bobrov@kau.edu.ua}{andrii.bobrov@kau.edu.ua} \quad$|$\quad
+    Website: \href{https://aznatdor.github.io}{aznatdor.github.io} \quad$|$\quad
+    ORCID: \href{https://orcid.org/0009-0005-9707-5619}{0009-0005-9707-5619}
+    }
+\end{center}
+
+\vspace{-6pt}
+
+% ==================== RESEARCH INTERESTS ====================
+\section{Research Interests}
+\noindent
+Monge--Kantorovich and Beckmann formulations of Optimal Transport.
+
+% ==================== ACADEMIC VISITS ====================
+\section{Academic Visits}
+
+\entry{The Fields Institute for Research in Mathematical Sciences}{Toronto, ON, Canada}
+{Visiting Member (In-person) --- Fully Funded Participant}{Jul 2026 -- Present}
+\begin{itemize}
+    \item Selected for funded participation in the \textit{Thematic Program on Optimal Transport} (travel \& living support provided).
+    \item Participating in advanced lecture series and participant-led working seminars on optimal transport.
+\end{itemize}
+
+% ==================== EDUCATION ====================
+\section{Education}
+
+\entry{Kyiv Academic University (KAU)}{Kyiv, Ukraine}
+{M.Sc. in Mathematics (Joint program with Institute of Mathematics, NAS of Ukraine)}{Sep 2025 -- Expected Jun 2027}
+\begin{itemize}
+    \item \textbf{Advisor:} Georgii Riabov
+\end{itemize}
+
+\entry{National Technical University of Ukraine ``KPI''}{Kyiv, Ukraine}
+{B.Sc. in Applied Mathematics (Institute of Physics and Technology -- IPT)}{Sep 2021 -- Jun 2025}
+\begin{itemize}
+    \item \textbf{GPA:} 92/100.
+    \item \textbf{B.Sc. Thesis:} \textit{Optimal Transport on Graphs and the Beckmann Problem} (Advisor: Georgii Riabov).
+    \item Established equivalence between $W_1$ optimal transport plans and Beckmann minimal flow problem on graphs;
+        analyzed constructive flow-decomposition algorithms.
+\end{itemize}
+
+% ==================== RESEARCH EXPERIENCE ====================
+\section{Research Experience}
+
+\noindent \textbf{Variational Formulations of the Monge--Kantorovich Problem in Banach Spaces} \\
+\textit{Master's Thesis Research (Joint work with G. Riabov) \hfill Sep 2025 -- Present}
+\begin{itemize}
+    \item \textbf{Setup:} Investigating minimal $L^1$-norm vector fields satisfying $-\operatorname{div}(u\mu) = \rho\mu$ for probability measures satisfying a Poincaré inequality (in particular Gaussian measures), extending the Beckmann continuous transport formulation.
+    \item \textbf{Finite-Dimensional Results:} Strong duality via Fenchel--Rockafellar duality; alignment $dU^* = \sigma \nabla w^*$. 
+        Continuity of $\sigma$ is yet to be established (or disproved).
+\end{itemize}
+
+% ==================== MANUSCRIPTS IN PREPARATION ====================
+\section{Manuscripts in Preparation \& Work in Progress}
+
+\begin{itemize}
+    \item \textbf{A. Bobrov}, G. Riabov, \textit{Beckmann problem on Wiener Space} (provisional title), manuscript in preparation.
+\end{itemize}
+
+% ==================== TALKS & PRESENTATIONS ====================
+\section{Talks \& Presentations}
+
+\begin{itemize}
+\item \textbf{Kantorovich--Rubinstein Distance on Gaussian Spaces}, presented at:
+  \begin{itemize}[leftmargin=1.5em]
+    \item \textit{The Skorokhod Readings} (Online),
+        Institute of Mathematics of NAS of Ukraine, Jun 2026.
+    \item \textit{International Conference of Young Mathematicians} (Online),
+        Institute of Mathematics of NAS of Ukraine, Jun 2026.
+  \end{itemize}
+    \item \textbf{Barycenters in Wasserstein Space: Local Geometry and Parametric Convergence}, \textit{KAU Mathematics Research Seminar}, Kyiv Academic University, Apr 2026.
+    \item \textbf{On the Monge and Beckmann Formulations of Optimal Transport in Abstract Wiener Spaces},
+        \textit{Optimal Transport Seminar}, The Fields Institute, Toronto, Canada (Oct 2026).
+\end{itemize}
+
+% ==================== HONORS & AWARDS ====================
+\section{Honors \& Academic Awards}
+
+\begin{itemize}
+    \item \textbf{Fields Institute Visiting Support}, Thematic Program on Optimal Transport \hfill 2026
+    \item \textbf{State Academic Excellence Scholarship}, KPI IPT (awarded to top 10\% of students by GPA) \hfill 2021 -- 2025
+\end{itemize}
+
+% ==================== SELECTED ADVANCED COURSEWORK ====================
+\section{Selected Advanced Coursework}
+
+\noindent
+\textbf{Geometry \& Topology:} Lie Groups, Symmetries of Differential Equations, Algebraic Topology, Ergodic Theory, Topological Dynamics.
+
+% ==================== LANGUAGES ====================
+\section{Languages}
+
+\noindent
+\textbf{Ukrainian:} Native \quad$|$\quad 
+\textbf{English:} Professional working proficiency \quad$|$\quad 
+\textbf{Japanese:} Intermediate / Conversational ($\sim$N3) \quad$|$\quad 
+\textbf{Russian:} Native
+
+\end{document}
